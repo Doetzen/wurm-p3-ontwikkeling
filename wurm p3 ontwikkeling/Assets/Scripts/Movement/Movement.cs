@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -11,7 +12,7 @@ public class Movement : MonoBehaviour
 
     private void Start()
     {
-        speed = 5;
+        
     }
 
     // Update is called once per frame
@@ -24,6 +25,15 @@ public class Movement : MonoBehaviour
         movement.z = ver;
 
         transform.Translate(movement * speed * Time.deltaTime);
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 10;
+        }
+        else 
+        {
+            speed = 5;
+        }
 
         if(Physics.Raycast(transform.position, -transform.up, out hit, 1.5f))
         {
