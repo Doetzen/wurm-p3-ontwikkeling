@@ -6,7 +6,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
    
-    public float hor, ver, speed, sprint;
+    public float hor, ver, speed, normalSpeed, sprint;
     public Vector3 movement, jump;
     public RaycastHit hit;
     public Rigidbody rb;
@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
     private void Start()
     {
         speed = 5;
+        normalSpeed = 5;
         sprint = 10;
     }
 
@@ -34,7 +35,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            speed = 5;
+            speed = normalSpeed;
         }
        
         if(Physics.Raycast(transform.position, -transform.up, out hit, 1.5f))
