@@ -6,6 +6,7 @@ TagManager:
   tags:
   - jumpable
   - pickable
+  - drag
   layers:
   - Default
   - TransparentFX

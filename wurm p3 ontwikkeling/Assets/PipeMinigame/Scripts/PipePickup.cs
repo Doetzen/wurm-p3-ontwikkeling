@@ -12,16 +12,15 @@ public class PipePickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Physics.Raycast(transform.position, transform.forward, out hittus, 1000f))
+        if (Input.GetMouseButtonDown(0))
         {
-            if(hittus.transform.tag == "pickable")
+            if (Physics.Raycast(transform.position, transform.forward, out hittus, 1000f))
             {
-                if (Input.GetMouseButtonDown(0))
+                if (hittus.transform.tag == "pickable")
                 {
-                    
+
                 }
             }
-            
         }
     }
 }
