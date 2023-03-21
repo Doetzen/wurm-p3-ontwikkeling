@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     public Vector3 movement, jump;
     public RaycastHit hit;
     public Rigidbody rb;
+    public AudioSource lopen, sprinten;
 
     private void Start()
     {
@@ -32,10 +33,12 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             speed = sprint;
+            sprinten.enabled = true;
         }
         else
         {
             speed = normalSpeed;
+            lopen.enabled = true;
         }
        
         if(Physics.Raycast(transform.position, -transform.up, out hit, 1.5f))
