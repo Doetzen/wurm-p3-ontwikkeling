@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby.unity
     guid: 8d33870491f1bf24a828ecdd54604e25
   - enabled: 1
+    path: Assets/Scenes/test/testscene Cayleigh.unity
+    guid: 62b077a688743e143aae93bc8e7582cd
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}
