@@ -6,9 +6,9 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
    
-    public float hor, ver, speed, normalSpeed, sprint;
+    public float hor, ver, speed, normalSpeed, sprint, jumpHight;
     public Vector3 movement, jump;
-    public RaycastHit hit;
+    public RaycastHit spring;
     public Rigidbody rb;
     public AudioSource lopen, sprinten;
 
@@ -33,26 +33,18 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             speed = sprint;
-            sprinten.enabled = true;
+            
         }
         else
         {
             speed = normalSpeed;
-            lopen.enabled = true;
+            
         }
        
-        if(Physics.Raycast(transform.position, -transform.up, out hit, 1.5f))
-        {
-            if (hit.transform.tag == "jumpable")
-            {
-              
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    rb.velocity += jump;
-                }
-            }
-           
+        if(Physics.Raycast(transform.position, -transform.up, out spring, 2f) && Input.GetKeyDown(KeyCode.Space))
+        {       
+          rb.AddForce(jump * jumpHight, ForceMode.Impulse);
+            
         }
-
     }
 }
