@@ -6,28 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class LoadingScene : MonoBehaviour
 {
-    public GameObject LoadingScreen;
-    public Image LoadingBarFill;
-    public float speed;
-
-
-    public void LoadScene(int sceneId)
+    public GameObject loadingScreen;
+    public Slider loadingBar;
+    public void LoadScene(int levelIndex)
     {
-        StartCoroutine(LoadSceneAsync(sceneId));
+        StartCoroutine(LoadSceneAsync(levelIndex));
     }
 
-    IEnumerator LoadSceneAsync(int sceneId)
+    IEnumerator LoadSceneAsync(int levelIndex)
     {
 
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneId);
-
-        LoadingScreen.SetActive(true);
-
+        AsyncOperation operation = SceneManager.LoadSceneAsync(levelIndex);
+        loadingScreen.SetActive(true);
         while (!operation.isDone)
         {
-            float progressValue = Mathf.Clamp01(operation.progress / speed);
-            LoadingBarFill.fillAmount = progressValue;
-
+            loadingBar.value = operation.progress;
             yield return null;
         }
     }
