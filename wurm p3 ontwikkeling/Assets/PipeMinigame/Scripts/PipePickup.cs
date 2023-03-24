@@ -38,8 +38,9 @@ public class PipePickup : MonoBehaviour
         if (pijp != null)
         {
             Vector3 position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(pijp.transform.position).z);
-
-        }
+            Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
+            pijp.transform.position = new Vector3(worldPosition.x, 25f);
+        }// die 25f zorgt ervoor dat het gameobject een klein beetje omhoog getild wordt
     }
     private RaycastHit CastRay()
     {
