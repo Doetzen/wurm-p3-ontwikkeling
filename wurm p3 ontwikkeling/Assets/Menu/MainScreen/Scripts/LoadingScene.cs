@@ -8,6 +8,7 @@ public class LoadingScene : MonoBehaviour
 {
     public GameObject loadingScreen;
     public Slider loadingBar;
+
     public void LoadScene(int levelIndex)
     {
         StartCoroutine(LoadSceneAsync(levelIndex));
