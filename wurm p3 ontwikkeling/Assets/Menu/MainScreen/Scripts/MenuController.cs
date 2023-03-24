@@ -23,6 +23,7 @@ public class MenuController : MonoBehaviour
         {
             levelToLoad = PlayerPrefs.GetString("SavedLevel");
             SceneManager.LoadScene(levelToLoad);
+          
         }
         else
         {
