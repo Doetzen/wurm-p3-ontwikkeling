@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8909791682043451565}
   - component: {fileID: 5479240006203676424}
   - component: {fileID: 7777396085520196546}
-  - component: {fileID: 7129161022063898806}
   - component: {fileID: 4085413016951793707}
   m_Layer: 0
   m_Name: plafond modulaire asset pack
@@ -85,21 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7129161022063898806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8137477829389337111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a73109742c8d47ac822895a473300c29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NumberOfSamples: 100
-  Benchmark: 0
-  SourceFont: {fileID: 0}
 --- !u!65 &4085413016951793707
 BoxCollider:
   m_ObjectHideFlags: 0
