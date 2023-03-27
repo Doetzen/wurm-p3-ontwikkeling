@@ -13,6 +13,7 @@ public class ConvoManager : MonoBehaviour
     public bool frederickStart;
     public bool beginStart;
     public int conversationPlus;
+    public Movement moveOff;
  
 
 
@@ -31,8 +32,7 @@ public class ConvoManager : MonoBehaviour
 
         if (beginStart == true)
         {
-            
-            
+            moveOff.movementOff = false;
             text.text = conversation.convoText[conversationPlus];
             if(Input.GetKeyDown(KeyCode.T)) 
             {
@@ -43,8 +43,9 @@ public class ConvoManager : MonoBehaviour
                 }
                 else
                 {
-                    
+                    moveOff.movementOff = true;
                     beginStart= false;
+                    text.gameObject.SetActive(false);
                 }
                 
             }

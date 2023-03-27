@@ -11,40 +11,47 @@ public class Movement : MonoBehaviour
     public RaycastHit spring;
     public Rigidbody rb;
     public AudioSource lopen, sprinten;
+    public bool movementOff;
 
     private void Start()
     {
         speed = 5;
         normalSpeed = 5;
         sprint = 7;
+        movementOff= true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        hor = Input.GetAxis("Horizontal");
-        ver = Input.GetAxis("Vertical");
-
-        movement.x = hor;
-        movement.z = ver;
-
-        transform.Translate(movement * speed * Time.deltaTime);
-
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (movementOff == true)
         {
+          hor = Input.GetAxis("Horizontal");
+          ver = Input.GetAxis("Vertical");
+
+          movement.x = hor;
+          movement.z = ver;
+
+          transform.Translate(movement * speed * Time.deltaTime);
+
+          if (Input.GetKey(KeyCode.LeftShift))
+          {
             speed = sprint;
             
-        }
-        else
-        {
+          }
+          else
+          {
             speed = normalSpeed;
             
-        }
+          }
        
-        if(Physics.Raycast(transform.position, -transform.up, out spring, 2f) && Input.GetKeyDown(KeyCode.Space))
-        {       
-          rb.AddForce(jump * jumpHight, ForceMode.Impulse);
+          if(Physics.Raycast(transform.position, -transform.up, out spring, 2f) && Input.GetKeyDown(KeyCode.Space))
+          {       
+            rb.AddForce(jump * jumpHight, ForceMode.Impulse);
             
+          }
+
         }
+        
     }
 }
