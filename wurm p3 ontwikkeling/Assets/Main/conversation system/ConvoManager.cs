@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class ConvoManager : MonoBehaviour
 {
@@ -10,10 +12,13 @@ public class ConvoManager : MonoBehaviour
     public TMP_Text text;
     public bool frederickStart;
     public bool beginStart;
+    public int conversationPlus;
+    public Movement speedOff;
+
 
     public void Start()
     {
-        print("meeo");
+       conversationPlus= 0;
     }
 
     public void Update()
@@ -21,11 +26,29 @@ public class ConvoManager : MonoBehaviour
         if (frederickStart == true)
         {
             text.text = conversation.convoText[0];
+            frederickStart= false;
         }
 
         if (beginStart == true)
         {
-            text.text = conversation.convoText[0];
+            speedOff.
+            
+            text.text = conversation.convoText[conversationPlus];
+            if(Input.GetKeyDown(KeyCode.T)) 
+            {
+                if(conversationPlus < conversation.convoText.Length -1)
+                {
+
+                    conversationPlus += 1;
+                }
+                else
+                {
+                    
+                    beginStart= false;
+                }
+                
+            }
+            
         }
     }
 

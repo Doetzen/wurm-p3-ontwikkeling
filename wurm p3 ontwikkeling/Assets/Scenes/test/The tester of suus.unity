@@ -736,11 +736,11 @@ MonoBehaviour:
   hor: 0
   ver: 0
   speed: 0
-  normalSpeed: 0
-  sprint: 0
-  jumpHight: 0
+  normalSpeed: 1
+  sprint: 3
+  jumpHight: 2
   movement: {x: 0, y: 0, z: 0}
-  jump: {x: 0, y: 0, z: 0}
+  jump: {x: 0, y: 5, z: 0}
   rb: {fileID: 1479257413}
   lopen: {fileID: 0}
   sprinten: {fileID: 0}

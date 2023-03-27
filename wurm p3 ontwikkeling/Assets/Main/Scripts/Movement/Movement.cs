@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour
     {
         speed = 5;
         normalSpeed = 5;
-        sprint = 10;
+        sprint = 7;
     }
 
     // Update is called once per frame
