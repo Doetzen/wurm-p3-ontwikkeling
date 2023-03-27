@@ -26,15 +26,15 @@ public class ConvoManager : MonoBehaviour
     {
         if (frederickStart == true)
         {
-            text.text = conversation.convoText[0];
-            frederickStart= false;
+            print("hey");
+         
         }
 
         if (beginStart == true)
         {
             moveOff.movementOff = false;
             text.text = conversation.convoText[conversationPlus];
-            if(Input.GetKeyDown(KeyCode.T)) 
+            if(Input.GetKeyDown(KeyCode.Space)) 
             {
                 if(conversationPlus < conversation.convoText.Length -1)
                 {
