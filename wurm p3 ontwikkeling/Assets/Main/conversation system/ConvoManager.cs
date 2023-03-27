@@ -13,7 +13,7 @@ public class ConvoManager : MonoBehaviour
     public bool frederickStart;
     public bool beginStart;
     public int conversationPlus;
-    public Movement speedOff;
+ 
 
 
     public void Start()
@@ -31,7 +31,7 @@ public class ConvoManager : MonoBehaviour
 
         if (beginStart == true)
         {
-            speedOff.
+            
             
             text.text = conversation.convoText[conversationPlus];
             if(Input.GetKeyDown(KeyCode.T)) 
