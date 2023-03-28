@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     public Vector3 movement, jump;
     public RaycastHit spring;
     public Rigidbody rb;
-    public bool movementOff, move;
+    public bool movementOff;
     public AudioSource lopen, springGeluid;
 
     private void Start()
