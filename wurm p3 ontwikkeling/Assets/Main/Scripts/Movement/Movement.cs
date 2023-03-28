@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
     public RaycastHit spring;
     public Rigidbody rb;
     public bool movementOff, move;
-    public AudioSource lopen, sproeng;
+    public AudioSource lopen, springGeluid;
 
     private void Start()
     {
@@ -36,14 +36,6 @@ public class Movement : MonoBehaviour
 
           transform.Translate(movement * speed * Time.deltaTime);
 
-            if (hor != 0 || ver != 0)
-            {
-                lopen.volume = 1;
-            }
-            else
-            {
-                lopen.volume = 0;
-            }
 
           if (Input.GetKey(KeyCode.LeftShift))
           { 
@@ -57,30 +49,21 @@ public class Movement : MonoBehaviour
        
           if(Physics.Raycast(transform.position, -transform.up, out spring, 1.5f) && Input.GetKeyDown(KeyCode.Space))
           {
-                print("fbejskfhrf");
             rb.AddForce(jump * jumpHight, ForceMode.Impulse);
-                sproeng.Play();
+                springGeluid.Play();
           }
 
+          if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+          {
+                lopen.enabled = true;
+          }
+          else
+          {
+                lopen.enabled = false;
+          }
+
+          
         }
-        //if (hor != 0 || ver != 0)
-        //{
-        //    move = true;
-        //}
-
-        //else
-        //{
-        //    move = false;
-        //}
-
-        //if (move == true)
-        //{
-        //    lopen.UnPause();
-        //}
-
-        //else
-        //{
-        //    lopen.Pause();
-        //}
+       
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2127434000878073795}
   - component: {fileID: 3038225945810172006}
   - component: {fileID: 994456793976605868}
+  - component: {fileID: 4949500078287831967}
   m_Layer: 0
   m_Name: stAirs modulaire asset pack
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4949500078287831967
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643243627018497401}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1550514412580984892, guid: aaf2e3e30352c3744a6d8ed6a8ea4a22, type: 3}
