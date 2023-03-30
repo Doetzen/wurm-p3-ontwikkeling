@@ -23,11 +23,12 @@ public class FirstPerson : MonoBehaviour
         mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
         mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
 
-        clamp -= mouseY;
         playerBody.Rotate(Vector3.up * mouseX);
+        //rotaten van lichaam.
+        clamp -= mouseY;
         clamp = Mathf.Clamp(clamp, -90, 90);
         transform.localRotation = Quaternion.Euler(clamp, 0f, 0f);
-        //moet dingen erbij gaan schrijven wat dit betekend
+        //Quaternion is een Vector3 maar voor rotatie
 
 
     }
