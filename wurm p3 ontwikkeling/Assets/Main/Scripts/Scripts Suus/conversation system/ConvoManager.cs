@@ -9,7 +9,7 @@ using Unity.VisualScripting;
 public class ConvoManager : MonoBehaviour
 {
     public Convo conversation;
-    public TMP_Text text;
+    public TMP_Text text, choiceA, choiceB;
     public bool frederickStart;
     public bool beginStart;
     public int conversationPlus;
@@ -26,8 +26,13 @@ public class ConvoManager : MonoBehaviour
     {
         if (frederickStart == true)
         {
-            print("hey");
-         
+            text.gameObject.SetActive(true);
+            text.text = conversation.convoText[0];
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                choiceA.text = conversation.convoText[1];
+                choiceB.text = conversation.convoText[2];
+            }
         }
 
         if (beginStart == true)
