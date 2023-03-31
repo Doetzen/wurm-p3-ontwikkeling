@@ -7,6 +7,8 @@ using UnityEngine;
 public class Convo : ScriptableObject
 {
     public string[] convoText;
+    public string[] answers;
+    public AudioClip[] voiceOvers;
     
 
 }
