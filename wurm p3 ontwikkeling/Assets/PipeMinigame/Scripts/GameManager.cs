@@ -7,17 +7,17 @@ public class GameManager : MonoBehaviour
     public GameObject pijpHouder;
     public GameObject[] pijpjes;
 
-    public  int pijpnummer = 0;
+    public  int pijpNummer = 0;
     //om de pijpen bij te houden 
-    int goedePijp;
+    int goedePijp = 0;
     //hiermee gaan we de pijpen die goed staan bijhouden
    
     void Start()
     {
-        pijpnummer = pijpHouder.transform.childCount;
+        pijpNummer = pijpHouder.transform.childCount;
         //pakken het nummer van de totale pijpen door de pijphouder en de childcount
         //returns int value of total pipes
-        pijpjes = new GameObject[pijpnummer];
+        pijpjes = new GameObject[pijpNummer];
         //we moeten de lengte van de pijpen bepalen dus maken we een nieuwe array aan en stoppen we de pijpnummer er in. dan kunnen we dit gebuiken voor de for loop
         for(int i = 0; i < pijpjes.Length; i++)
         {
@@ -29,9 +29,13 @@ public class GameManager : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    public void CorrectMove()
+    {// gaat activeren wanneer we een pijp in de corecte positie draaien
+        goedePijp += 1;
 
+        if(goedePijp == pijpNummer)
+        {
+            print("WHOOOOOOOO");
+        }
     }
 }

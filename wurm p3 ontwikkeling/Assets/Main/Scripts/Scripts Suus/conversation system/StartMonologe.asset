@@ -17,3 +17,8 @@ MonoBehaviour:
   - "As kids we were always told to never get close to this maze but\u2026"
   - "Geert-Jan\u2026. My friend\u2026.. He got kidnapped and taken in here\u2026"
   - I have to save him!
+  timZinnen:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

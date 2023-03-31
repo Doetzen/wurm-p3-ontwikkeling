@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     public Rigidbody rb;
     public bool movementOff;
     public AudioSource lopen, springGeluid;
+    public AudioSource[] timZinnen;
 
     private void Start()
     {

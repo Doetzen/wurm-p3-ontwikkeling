@@ -14,6 +14,8 @@ public class ConvoManager : MonoBehaviour
     public bool beginStart;
     public int conversationPlus;
     public Movement moveOff;
+
+   
  
 
 
@@ -45,6 +47,8 @@ public class ConvoManager : MonoBehaviour
                 {
 
                     conversationPlus += 1;
+                   
+
                 }
                 else
                 {
