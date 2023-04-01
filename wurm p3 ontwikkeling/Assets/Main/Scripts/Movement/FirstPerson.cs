@@ -13,8 +13,7 @@ public class FirstPerson : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        //cursor in midden van scherm en ontzichtbaar
+        
     }
 
     // Update is called once per frame

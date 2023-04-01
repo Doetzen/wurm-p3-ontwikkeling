@@ -54,17 +54,23 @@ public class Movement : MonoBehaviour
                 springGeluid.Play();
           }
 
-          if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
-          {
-                lopen.enabled = true;
-          }
-          else
-          {
-                lopen.enabled = false;
-          }
-
-          
         }
-       
+        
+        if (movementOff == false)
+        {
+            lopen.enabled = false;
+        }
+        else
+        {
+
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            {
+                lopen.enabled = true;
+            }
+            else
+            {
+                lopen.enabled = false;
+            }
+        }
     }
 }

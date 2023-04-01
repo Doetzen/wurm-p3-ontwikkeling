@@ -6,7 +6,7 @@ TagManager:
   tags:
   - jumpable
   - pickable
-  - drag
+  - pijpDoos
   layers:
   - Default
   - TransparentFX
