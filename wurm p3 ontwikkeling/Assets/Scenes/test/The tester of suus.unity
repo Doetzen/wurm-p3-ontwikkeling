@@ -660,8 +660,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390472064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.91, y: 2.12, z: -2.765299}
-  m_LocalScale: {x: 2.53, y: 0.53, z: 8.04}
+  m_LocalPosition: {x: -2.91, y: 2.13, z: -2.765299}
+  m_LocalScale: {x: 0.43, y: 0.53, z: 8.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -734,6 +734,7 @@ MonoBehaviour:
   voiceSource: {fileID: 385857669}
   buttonA: {fileID: 1240147860}
   buttonB: {fileID: 1935810082}
+  boom: {fileID: 390472064}
 --- !u!4 &492066732
 Transform:
   m_ObjectHideFlags: 0
@@ -1240,7 +1241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479257407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9, y: 5.68, z: -2.765299}
+  m_LocalPosition: {x: 4.9, y: 4.07, z: -2.765299}
   m_LocalScale: {x: 0.5, y: 0.67, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []

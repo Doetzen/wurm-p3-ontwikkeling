@@ -15,8 +15,8 @@ MonoBehaviour:
   convoText:
   - "WAIT\u2026. Don\u2019t go in there\u2026. It\u2019s far too dangerous, you will
     kill us both"
-  - ...
   - "Still\u2026. we.. we can\u2019t"
+  - ...
   - "fine but if we get killed I\u2019ll blame you"
   answers:
   - "but.. but\u2026.. fine\u2026"
