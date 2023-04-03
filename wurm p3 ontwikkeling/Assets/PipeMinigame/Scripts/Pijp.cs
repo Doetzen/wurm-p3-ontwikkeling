@@ -42,30 +42,20 @@ public class Pijp : MonoBehaviour
     public void Wurm()  
     {
           
-            transform.Rotate(new Vector3(0, 0, 90));
+        transform.Rotate(new Vector3(0, 0, 90));
         plop.Play();
         if(posRotate > 1)
-        {
-            if (transform.eulerAngles.z == correctRotation[0] || (transform.eulerAngles.z == correctRotation[1] && isPlaced == false))
+        {//checken of hij goed staat..... asl hij die goede rotatie heeft die aan is gegeven dan doet hij de check niet en anders doet hij het wel.
+         //als hij dan goed staat dan  gebeurt de rest er onder
+            if (transform.eulerAngles.z == correctRotation[0] || (transform.eulerAngles.z == correctRotation[1]))
             {//hier doen we hetzelfde als in de start functie. als er 2 mogelijke rotaties zijn dan checkt hij index 0 en index 1
                 isPlaced = true;
             }
-            else if (isPlaced == true)
+            else
             {
                 isPlaced = false;
             }
         }
-        else
-        {
-
-            if (transform.eulerAngles.z == correctRotation[0] && isPlaced == false)
-            {//in de else doen we weer hezelfde. we hoeven maar 1 correcte rotatie te checken
-                isPlaced = true;
-            }
-            else if (isPlaced == true)
-            {
-                isPlaced = false;
-            }
-        }
+       
     }
 }
