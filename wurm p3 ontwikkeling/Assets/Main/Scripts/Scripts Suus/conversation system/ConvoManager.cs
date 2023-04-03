@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Rendering;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
+using UnityEngine.UIElements;
 
 public class ConvoManager : MonoBehaviour
 {
@@ -112,6 +113,7 @@ public class ConvoManager : MonoBehaviour
             choiceB.gameObject.SetActive(false); 
             text.gameObject.SetActive(false);
             choiceA.gameObject.SetActive(false);
+            SceneManager.LoadScene(4);
 
         }
     }
