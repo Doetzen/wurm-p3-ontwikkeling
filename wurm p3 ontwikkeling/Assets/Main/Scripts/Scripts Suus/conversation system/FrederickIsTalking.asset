@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: FrederickIsTalking
   m_EditorClassIdentifier: 
   convoText:
-  - "WAIT\u2026. Don\u2019t go in there\u2026. It\u2019s far too dangerous, you will
+  - "WAIT\u2026. don\u2019t go in there\u2026. it\u2019s far too dangerous, you will
     kill us both"
-  - "Still\u2026. we.. we can\u2019t"
+  - "still\u2026. we.. we can\u2019t"
   - ...
   - "fine but if we get killed I\u2019ll blame you"
   answers:
   - "but.. but\u2026.. fine\u2026"
-  - "but I have to go.. My friend is in there getting tortured\u2026"
-  - "I know that it\u2019s dangerous but I still have to save Geert-Jan.. Are you
-    Coming with me or what?"
+  - "but I have to go.. my friend is in there getting tortured\u2026"
+  - "I know that it\u2019s dangerous but I still have to save geert-jan.. Are you
+    coming with me or what?"
   voiceOvers:
   - {fileID: 0}
   - {fileID: 0}

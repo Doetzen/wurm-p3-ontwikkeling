@@ -77,7 +77,7 @@ public class ConvoManager : MonoBehaviour
 
     public void ChoiceA()
     {
-        if (conversationPlus < conversation.convoText.Length - 1)
+        if (conversationPlus < conversation.convoText.Length - 3)
         {
             conversationPlus = (conversationPlus * 2) + 1;
             choiceA.text = conversation.answers[2];
@@ -98,11 +98,12 @@ public class ConvoManager : MonoBehaviour
 
     public void ChoiceB()
     {
-        if (conversationPlus < conversation.convoText.Length - 2)
+        if (conversationPlus < conversation.convoText.Length - 4)
         {
             conversationPlus = (conversationPlus * 2) + 2;
             choiceA.gameObject.SetActive(false);
-       
+
+
         }
        else
        {   
@@ -110,7 +111,8 @@ public class ConvoManager : MonoBehaviour
             moveOff.movementOff = true;
             choiceB.gameObject.SetActive(false); 
             text.gameObject.SetActive(false);
-       
+            choiceA.gameObject.SetActive(false);
+
         }
     }
 
