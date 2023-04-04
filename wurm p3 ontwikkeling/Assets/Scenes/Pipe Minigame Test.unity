@@ -499,14 +499,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c398c0540c6b454a9c9241627a1d1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotations:
-  - 0
-  - 90
-  - 180
-  - 270
-  correctRotation:
-  - 270
-  - 90
+  rotations: 000000005a000000b40000000e010000
+  correctRotation: 5a0000000e010000
   isPlaced: 0
   plop: {fileID: 298786592}
 --- !u!61 &298786591
@@ -773,6 +767,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 358068886}
+  - component: {fileID: 358068887}
   m_Layer: 5
   m_Name: rest pijp
   m_TagString: Untagged
@@ -809,6 +804,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &358068887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358068885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8852bf8a6ef423d42a34dace3e70750d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pijpHouder: {fileID: 358068885}
+  pijpjes:
+  - {fileID: 1877727946}
+  - {fileID: 298786585}
+  - {fileID: 698200186}
+  - {fileID: 2070185346}
+  - {fileID: 1467299303}
+  - {fileID: 1331868660}
+  - {fileID: 1869064597}
+  - {fileID: 662792076}
+  - {fileID: 911339236}
+  pijpNummer: 0
 --- !u!1 &362145274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,14 +1334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c398c0540c6b454a9c9241627a1d1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotations:
-  - 0
-  - 90
-  - 180
-  - 270
-  correctRotation:
-  - 270
-  - 270
+  rotations: 000000005a000000b40000000e010000
+  correctRotation: 0e0100000e010000
   isPlaced: 0
   plop: {fileID: 298786592}
 --- !u!82 &662792082
@@ -1690,14 +1703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c398c0540c6b454a9c9241627a1d1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotations:
-  - 0
-  - 90
-  - 180
-  - 270
-  correctRotation:
-  - 0
-  - 0
+  rotations: 000000005a000000b40000000e010000
+  correctRotation: 0000000000000000
   isPlaced: 0
   plop: {fileID: 298786592}
 --- !u!82 &698200192
@@ -2422,14 +2429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c398c0540c6b454a9c9241627a1d1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotations:
-  - 0
-  - 90
-  - 180
-  - 270
-  correctRotation:
-  - 270
-  - 90
+  rotations: 000000005a000000b40000000e010000
+  correctRotation: 5a0000000e010000
   isPlaced: 0
   plop: {fileID: 298786592}
 --- !u!82 &911339242
@@ -3473,14 +3474,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c398c0540c6b454a9c9241627a1d1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotations:
-  - 0
-  - 90
-  - 180
-  - 270
-  correctRotation:
-  - 0
-  - 0
+  rotations: 000000005a000000b40000000e010000
+  correctRotation: 0000000000000000
   isPlaced: 0
   plop: {fileID: 298786592}
 --- !u!61 &1331868664
@@ -3816,14 +3811,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c398c0540c6b454a9c9241627a1d1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotations:
-  - 0
-  - 90
-  - 180
-  - 270
-  correctRotation:
-  - 270
-  - 90
+  rotations: 000000005a000000b40000000e010000
+  correctRotation: 5a0000000e010000
   isPlaced: 0
   plop: {fileID: 298786592}
 --- !u!82 &1467299309
@@ -4959,14 +4948,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c398c0540c6b454a9c9241627a1d1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotations:
-  - 0
-  - 90
-  - 180
-  - 270
-  correctRotation:
-  - 0
-  - 180
+  rotations: 000000005a000000b40000000e010000
+  correctRotation: 00000000b4000000
   isPlaced: 0
   plop: {fileID: 298786592}
 --- !u!82 &1869064603
@@ -5232,14 +5215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c398c0540c6b454a9c9241627a1d1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotations:
-  - 0
-  - 90
-  - 180
-  - 270
-  correctRotation:
-  - 270
-  - 90
+  rotations: 000000005a000000b40000000e010000
+  correctRotation: 5a0000000e010000
   isPlaced: 0
   plop: {fileID: 298786592}
 --- !u!61 &1877727952
@@ -6274,14 +6251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c398c0540c6b454a9c9241627a1d1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotations:
-  - 0
-  - 90
-  - 180
-  - 270
-  correctRotation:
-  - 180
-  - 180
+  rotations: 000000005a000000b40000000e010000
+  correctRotation: b4000000b4000000
   isPlaced: 0
   plop: {fileID: 298786592}
 --- !u!82 &2070185352
