@@ -11,11 +11,14 @@ public class TeleportTerug : MonoBehaviour
     public BoxCollider fyjmenld;
     public GameManager gm;
 
-    // Update is called once per frame
+    private void Start()
+    {
+       
+       
+    }
     void Update()
     {
-        SceneManager.LoadScene(1);
-        player.transform.position = spawn.position;
+       
         Destroy(fyjmenld);
     }
 
