@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject pijpHouder;
+    public GameObject backKnop;
     public  int pijpNummer = 0;
     //om de pijpen bij te houden 
     int goedePijp = 0;
     //hiermee gaan we de pijpen die goed staan bijhouden
+   
+    
  
 
     void Start()
@@ -26,8 +29,10 @@ public class GameManager : MonoBehaviour
 
         if(goedePijp == pijpNummer)
         {
-            print("WHOOOOOOOO");
-            SceneManager.LoadScene(1);
+           
+            backKnop.SetActive(true);
+            //SceneManager.LoadScene(1);
+            
         }
     }
 }
