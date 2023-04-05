@@ -10,14 +10,14 @@ public class GameManager : MonoBehaviour
     //om de pijpen bij te houden 
     int goedePijp = 0;
     //hiermee gaan we de pijpen die goed staan bijhouden
-    public MouseLock mouseLock;
+ 
 
     void Start()
     {
         pijpNummer = pijpHouder.transform.childCount;
         //pakken het nummer van de totale pijpen door de pijphouder en de childcount dus als hij start dan telt hij alle pijpen van de child rest pijp. dit zijn er 9
         //en hij wordt laten zien als je op start drukt
-        mouseLock.isLocked = false;
+      
     }
 
     public void CorrectMove()
