@@ -817,17 +817,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pijpHouder: {fileID: 358068885}
-  pijpjes:
-  - {fileID: 1877727946}
-  - {fileID: 298786585}
-  - {fileID: 698200186}
-  - {fileID: 2070185346}
-  - {fileID: 1467299303}
-  - {fileID: 1331868660}
-  - {fileID: 1869064597}
-  - {fileID: 662792076}
-  - {fileID: 911339236}
   pijpNummer: 0
+  fyjmenld: {fileID: 0}
 --- !u!1 &362145274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,7 +2531,7 @@ GameObject:
   - component: {fileID: 921734439}
   - component: {fileID: 921734438}
   m_Layer: 0
-  m_Name: game klaar
+  m_Name: gameKlaar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2559,8 +2550,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pijpHouder: {fileID: 358068885}
-  pijpjes: []
   pijpNummer: 0
+  fyjmenld: {fileID: 0}
 --- !u!4 &921734439
 Transform:
   m_ObjectHideFlags: 0

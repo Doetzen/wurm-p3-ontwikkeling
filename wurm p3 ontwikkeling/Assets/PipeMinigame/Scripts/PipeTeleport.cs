@@ -5,18 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class PipeTeleport : MonoBehaviour
 {
-   
-    public Collider pijpDoos;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public BoxCollider fyjmenld;
+    //fyjmenld: fuck you je mag er niet langs doos  
+    private MouseLock mouseLock;
 
-    // Update is called once per frame
-    public void OnCollisionEnter(Collision pijpDoos)
+    public void OnCollisionEnter(Collision other)
     {
         SceneManager.LoadScene(3);
-
+        Destroy(fyjmenld);
+        mouseLock.isLocked = false;
     }
 }

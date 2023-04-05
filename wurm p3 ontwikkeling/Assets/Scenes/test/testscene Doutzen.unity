@@ -782,6 +782,7 @@ MonoBehaviour:
   player: {fileID: 1779230120}
   cam: {fileID: 0}
   spawnPoint: {fileID: 255667923}
+  dood: {fileID: 0}
 --- !u!1 &1779230120
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,9 +908,9 @@ MonoBehaviour:
   jump: {x: 0, y: 5, z: 0}
   rb: {fileID: 1779230126}
   movementOff: 0
-  move: 0
   lopen: {fileID: 1779230127}
-  sproeng: {fileID: 0}
+  springGeluid: {fileID: 0}
+  timZinnen: []
 --- !u!54 &1779230126
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1118,3 +1119,72 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &187303286424429533
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8215975834223982876, guid: fa8bb255e8cea7343b9f769eb4675e42,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215975834223982876, guid: fa8bb255e8cea7343b9f769eb4675e42,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215975834223982876, guid: fa8bb255e8cea7343b9f769eb4675e42,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215975834223982876, guid: fa8bb255e8cea7343b9f769eb4675e42,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215975834223982876, guid: fa8bb255e8cea7343b9f769eb4675e42,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215975834223982876, guid: fa8bb255e8cea7343b9f769eb4675e42,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215975834223982876, guid: fa8bb255e8cea7343b9f769eb4675e42,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215975834223982876, guid: fa8bb255e8cea7343b9f769eb4675e42,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215975834223982876, guid: fa8bb255e8cea7343b9f769eb4675e42,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215975834223982876, guid: fa8bb255e8cea7343b9f769eb4675e42,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215975834223982876, guid: fa8bb255e8cea7343b9f769eb4675e42,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741155722410943398, guid: fa8bb255e8cea7343b9f769eb4675e42,
+        type: 3}
+      propertyPath: m_Name
+      value: spike trap modulaire asset pack
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa8bb255e8cea7343b9f769eb4675e42, type: 3}
