@@ -18,6 +18,7 @@ public class ConvoManager : MonoBehaviour
     public AudioSource voiceSource;
     public Button buttonA, buttonB;
     public GameObject boom;
+
    
  
 
@@ -31,6 +32,7 @@ public class ConvoManager : MonoBehaviour
     {
         if (frederickStart == true)
         {
+            
             moveOff.movementOff = false;
             text.gameObject.SetActive(true);
             text.text = conversation.convoText[conversationPlus];
@@ -39,9 +41,11 @@ public class ConvoManager : MonoBehaviour
                 choiceA.text = conversation.answers[1];
                 choiceB.text = conversation.answers[0];
                Destroy(boom);
+               
             }
-            
+
         }
+       
 
         if (beginStart == true)
         {
