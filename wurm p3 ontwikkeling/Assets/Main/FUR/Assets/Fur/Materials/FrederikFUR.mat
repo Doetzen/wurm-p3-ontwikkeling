@@ -35,17 +35,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaCutout: 0.048
+    - _AlphaCutout: 0.314
     - _AppendMoreFins: 0
     - _Density: 10
     - _DrawOrigPolygon: 1
-    - _FaceNormalFactor: 0.28
+    - _FaceNormalFactor: 0.152
     - _FaceViewProdThresh: 1
-    - _FinJointNum: 3
-    - _FinLength: 0.081
+    - _FinJointNum: 8
+    - _FinLength: 0.014
     - _Metallic: 0.596
     - _NormalFactor: 0.196
-    - _NormalScale: 0.26
+    - _NormalScale: 0.038
     - _Occlusion: 0.455
     - _RandomDirection: 0.442
     - _RimLightIntensity: 0.871
