@@ -5,13 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PipeTeleport : MonoBehaviour
 {
-    
-    //fyjmenld: fuck you je mag er niet langs doos 
-
-    public void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter(Collision collision)
     {
         SceneManager.LoadScene(3);
-       
-        
     }
 }
