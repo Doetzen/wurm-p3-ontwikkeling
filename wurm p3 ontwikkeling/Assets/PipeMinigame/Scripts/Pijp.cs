@@ -50,7 +50,7 @@ public class Pijp : MonoBehaviour
             else
             {
                 isPlaced = false;
-                print(transform.localEulerAngles.z);
+                
             }
         }
         //Debug.Log(transform.localRotation);

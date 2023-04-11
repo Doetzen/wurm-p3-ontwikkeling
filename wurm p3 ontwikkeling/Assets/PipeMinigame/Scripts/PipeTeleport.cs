@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PipeTeleport : MonoBehaviour
 {
     public GameObject fyjmenld;
+   
     private void OnMouseDown()
     {
         SceneManager.LoadScene(3, LoadSceneMode.Additive);
