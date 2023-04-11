@@ -5,24 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Terug : MonoBehaviour
 {
-    public Transform spawn
-        ;
-    public GameObject player;
-    public bool scene;
+    
     public void Poof()
     {
-        SceneManager.LoadScene(1);
-        scene = true;
-        DontDestroyOnLoad(spawn);
-    }
-
-    public void Start()
-    {
-        if (scene == true)
-        {
-            player.transform.position = spawn.position;
-        }
+        SceneManager.UnloadSceneAsync(3);
         
-    }
 
+    }
 }
+
+  

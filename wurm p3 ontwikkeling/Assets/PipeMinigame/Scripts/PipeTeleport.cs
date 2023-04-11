@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PipeTeleport : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    public GameObject fyjmenld;
+    private void OnMouseDown()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(3, LoadSceneMode.Additive);
+        Destroy(fyjmenld);
     }
 }
