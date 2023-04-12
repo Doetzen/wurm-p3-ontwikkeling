@@ -9,4 +9,10 @@ public class MainMenuLoad : MonoBehaviour
     {
        SceneManager.LoadScene(levelName);
     }
+
+    public void ResetSave()
+    {
+        PlayerPrefs.SetInt("levelDone", 0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
