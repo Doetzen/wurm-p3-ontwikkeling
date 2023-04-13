@@ -12,7 +12,7 @@ public class MainMenuLoad : MonoBehaviour
 
     public void ResetSave()
     {
-        PlayerPrefs.SetInt("levelDone", 0);
+        PlayerPrefs.SetInt("levelsDone", 0);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
