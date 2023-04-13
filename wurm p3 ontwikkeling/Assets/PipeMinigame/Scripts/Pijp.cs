@@ -53,6 +53,6 @@ public class Pijp : MonoBehaviour
                 
             }
         }
-        //Debug.Log(transform.localRotation);
+        
     }
 }

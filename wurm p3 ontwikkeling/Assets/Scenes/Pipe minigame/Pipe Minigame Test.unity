@@ -811,7 +811,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 358068886}
-  - component: {fileID: 358068887}
   m_Layer: 5
   m_Name: rest pijp
   m_TagString: Untagged
@@ -848,21 +847,6 @@ RectTransform:
   m_AnchoredPosition: {x: -3.0000205, y: -23}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &358068887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358068885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8852bf8a6ef423d42a34dace3e70750d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pijpHouder: {fileID: 358068885}
-  backKnop: {fileID: 0}
-  pijpNummer: 0
 --- !u!1 &362145274
 GameObject:
   m_ObjectHideFlags: 0

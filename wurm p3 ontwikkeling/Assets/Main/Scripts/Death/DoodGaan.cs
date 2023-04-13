@@ -13,11 +13,11 @@ public class DoodGaan: MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            
+            dood.Play();
             player.transform.position = spawnPoint.position;
             player.transform.eulerAngles = new Vector3(0, -90, 0);
             cam.transform.rotation = quaternion.Euler (0, 0, 0);
-            dood.Play();
+            
         }
     }
     
