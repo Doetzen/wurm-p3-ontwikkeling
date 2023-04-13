@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,29 +9,21 @@ public class GameManager : MonoBehaviour
     public GameObject pijpHouder;
     public GameObject backKnop;
     public  int pijpNummer = 0; 
-    int goedePijp = 0;
-    //hiermee gaan we de pijpen die goed staan bijhouden
-   
-    
- 
-
+    private int goedePijp = 0;
+    public Pijp[] pijp;
+  
     void Start()
     {
         pijpNummer = pijpHouder.transform.childCount;
-        
-      
     }
 
-    public void CorrectMove()
+    public void Update()
     {
-        goedePijp += 1;
-
-        if(goedePijp == pijpNummer)
+        if (pijp[0].isPlaced == true && pijp[1].isPlaced == true && pijp[2].isPlaced == true && pijp[3].isPlaced == true && pijp[4].isPlaced == true && pijp[5].isPlaced == true && pijp[6].isPlaced == true && pijp[7].isPlaced == true && pijp[8].isPlaced == true)
         {
-           
             backKnop.SetActive(true);
-            
-            
         }
     }
+
+  
 }
