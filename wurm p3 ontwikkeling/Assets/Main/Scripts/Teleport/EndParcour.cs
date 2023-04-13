@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class EndParcour : MonoBehaviour
 {
-    private bool gameEnded;
     public string nextLevelName;
     public int levelNumberSave;
     
@@ -17,10 +16,8 @@ public class EndParcour : MonoBehaviour
             PlayerPrefs.SetInt("levelsDone", levelNumberSave);
         }
 
-        if (nextLevelName != "")
         {
             SceneManager.LoadScene(2);
         }
-        gameEnded = true;
     }
 }
