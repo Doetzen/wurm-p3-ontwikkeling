@@ -19311,6 +19311,7 @@ GameObject:
   - component: {fileID: 7580809448810639714}
   - component: {fileID: 8138369281681002207}
   - component: {fileID: 779965240458287801}
+  - component: {fileID: -8567719550943672140}
   m_Layer: 0
   m_Name: fakkelblend Variant (1)
   m_TagString: Untagged
@@ -19385,6 +19386,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &-8567719550943672140
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7861135590036039763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.061947677
+  m_Height: 0.22297832
+  m_Direction: 1
+  m_Center: {x: 0.00007211041, y: 0.018395457, z: -0.05687175}
 --- !u!1 &8913173263875673927
 GameObject:
   m_ObjectHideFlags: 0
