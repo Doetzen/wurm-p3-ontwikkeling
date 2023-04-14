@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     public GameObject pijpHouder;
     public GameObject backKnop;
     public  int pijpNummer = 0; 
-    private int goedePijp = 0;
     public Pijp[] pijp;
   
     void Start()

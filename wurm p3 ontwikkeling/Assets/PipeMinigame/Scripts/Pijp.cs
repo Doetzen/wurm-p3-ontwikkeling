@@ -34,7 +34,6 @@ public class Pijp : MonoBehaviour
         else
         {
             isPlaced = false;
-
         }
     }
 }
