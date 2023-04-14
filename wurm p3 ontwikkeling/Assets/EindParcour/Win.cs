@@ -7,6 +7,6 @@ public class Win : MonoBehaviour
 {
     public void OnMouseDown()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 }
