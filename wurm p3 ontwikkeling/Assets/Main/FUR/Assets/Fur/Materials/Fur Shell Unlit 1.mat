@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Fur Shell Unlit
+  m_Name: Fur Shell Unlit 1
   m_Shader: {fileID: 4800000, guid: fdaa036e0e6ed204bade89e7c7adb4db, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
