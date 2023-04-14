@@ -10,7 +10,7 @@ using UnityEngine.UIElements;
 public class ConvoManager : MonoBehaviour
 {
     public Convo conversation;
-    public TMP_Text text, choiceA, choiceB;
+    public TMP_Text text, choiceA, choiceB, space;
     public bool frederickStart;
     public bool beginStart;
     public int conversationPlus;
@@ -78,7 +78,22 @@ public class ConvoManager : MonoBehaviour
             }
             
         }
+
+        if (beginStart == true)
+        {
+            if(conversationPlus == 0)
+            {
+                space.gameObject.SetActive(true);
+                space.text = ("Press space bar to continue");
+
+            }else
+            {
+                space.gameObject.SetActive(false);
+            }
+        }
     }
+
+    
 
     public void ChoiceA()
     {
